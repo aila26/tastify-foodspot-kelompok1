@@ -1,0 +1,375 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #103b78;
+}
+
+/* PAGE */
+.page {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* PAGE HEADING */
+.page-heading {
+    height: 39px;
+    padding: 7px 16px;
+    color: #292929;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 56px;
+    margin: 0 10px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 34px;
+}
+
+/* LOGO */
+.logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+/* NAVIGATION */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #003d83;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-menu a.active {
+    color: #79a9e9;
+}
+
+.nav-menu a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #83b3f1;
+    bottom: 0;
+    left: 0;
+}
+
+/* NAV ICONS */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.nav-icons a {
+    color: #003d83;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 236px;
+    margin: 0 10px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url('../images/hero-aquarium-restaurant.avif');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.hero-content p {
+    font-size: 11px;
+    margin-bottom: 23px;
+}
+
+/* SEARCH BOX */
+.search-box {
+    width: 400px;
+    max-width: 90%;
+    height: 36px;
+
+    margin: 0 auto;
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.search-box i {
+    color: #82a9d9;
+    font-size: 15px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: #333333;
+}
+
+.search-box input::placeholder {
+    color: #8aaedc;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+    padding: 17px 42px 13px;
+}
+
+.feature-card {
+    width: 30%;
+    height: 58px;
+
+    border: 1.5px solid #81afea;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+
+    text-decoration: none;
+    color: #092f6b;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+.feature-card:hover {
+    background-color: #f2f7ff;
+    transform: translateY(-2px);
+}
+
+.feature-card > i {
+    font-size: 32px;
+}
+
+.feature-text h3 {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.feature-text p {
+    color: #76a6e4;
+    font-size: 11px;
+}
+
+/* TRENDING */
+.trending {
+    padding: 0 35px 30px;
+}
+
+.trending h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 21px;
+    font-weight: 700;
+    color: #173f7a;
+
+    margin-bottom: 8px;
+}
+
+.trending h2 span {
+    font-size: 23px;
+}
+
+/* FOOD CONTAINER */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 32px;
+    row-gap: 13px;
+}
+
+/* FOOD CARD */
+.food-card {
+    border: 1.5px solid #75a9e9;
+    border-radius: 12px;
+
+    overflow: hidden;
+    background-color: #ffffff;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+
+    transition: 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.food-card img {
+    display: block;
+    width: 100%;
+    height: 107px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 5px 10px 7px;
+}
+
+.food-info h3 {
+    color: #153e79;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating i {
+    color: #ffad45;
+    font-size: 15px;
+}
+
+.rating span {
+    color: #76a5df;
+    font-size: 11px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+
+    .features {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .feature-card {
+        gap: 7px;
+    }
+
+    .feature-card > i {
+        font-size: 22px;
+    }
+
+    .feature-text h3,
+    .feature-text p {
+        font-size: 9px;
+    }
+
+    .trending {
+        padding: 0 20px 25px;
+    }
+
+    .food-container {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .nav-menu {
+        gap: 8px;
+    }
+
+    .nav-menu a {
+        font-size: 8px;
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 21px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .food-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .food-card img {
+        height: 100px;
+    }
+}
